@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class AnyController {
+public class ByteArrayController {
 	@RequestMapping(value = "/byteArray", method = RequestMethod.POST)
 	public void anyMethod(@RequestBody byte[] byteArray) {
 		for (int i = 0; i < byteArray.length; i++) {

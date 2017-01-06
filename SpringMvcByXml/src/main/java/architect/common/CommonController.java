@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController// Combines @Controller and @ResponseBody
-public class AnyController {
+public class CommonController {
 	// Ctrl click the annotations for more information.
 	@RequestMapping(value = "/common/{anyValue}", method = RequestMethod.POST)
 	public void anyMethod(@PathVariable("anyPathVariable") String anyPathVariable,

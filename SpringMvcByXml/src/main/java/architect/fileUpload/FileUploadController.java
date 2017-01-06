@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 @RestController
-public class AnyController {
+public class FileUploadController {
 	@RequestMapping(value = "/fileUpload", method = RequestMethod.POST) 
 	public void anyMethod(@RequestParam("file") MultipartFile multipartFile) {
 		try {
